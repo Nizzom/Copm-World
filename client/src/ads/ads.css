@@ -1,0 +1,37 @@
+.ads
+{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 300px;
+    height: calc(100vh - 70px);
+    background: #19202b;
+}
+.ads.active 
+{
+    background: #f6f6f6;
+}
+.ads img
+{
+    height: 99%;
+    width: 100%;
+}
+@media(max-width: 970px)
+{
+    .ads
+    {
+        width: 270px;
+        height: calc(100vh - 60px);
+    }
+}
+@media(max-width: 815px)
+{
+    .ads
+    {
+        display: none;
+    }
+    .ads.active
+    {
+        display: none;
+    }
+}

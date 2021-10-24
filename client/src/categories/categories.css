@@ -1,0 +1,129 @@
+.categor
+{
+    position: fixed;
+    left: 0px;
+    width: 300px;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    background: #12161d;
+    color: #ecf1f2;
+}
+.categor .categor__p 
+{
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.scroll
+{
+    overflow-y: scroll;
+    width: 100%;
+    height: 90%;
+}
+.scroll::-webkit-scrollbar
+{
+    background-color: #12161d;
+}
+.scroll::-webkit-scrollbar-thumb
+{
+    background-color: #f59a1d;
+    border-radius: 1rem;
+    width: 10px;
+}
+.categor__Bx
+{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.categor__Bx .categor__name
+{
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #0d9bea;
+    margin-top: 10px;
+}
+.categor__Bx .categor__p1
+{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 19px;
+    margin-top: 5px;
+    color: #ecf1f2;
+}
+.categor__Bx .categor__p2
+{
+    margin-left: 17px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #f59a1d ;
+}
+.none
+{
+    display: none;
+}
+@media(max-width:1200px){
+    .categor
+    {
+        left: -290px;
+        width: 290px;
+        transition: all 1s ease;
+    }
+    .categor.active1
+    {
+        left: 0px;
+    }
+}
+@media(max-width: 970px)
+{
+    .categor
+    {
+        left: -250px;
+        width: 250px;
+        margin-top: 60px;
+        height: calc(100vh - 60px);
+        transition: all 1s ease;
+    }
+    .categor .categor__p 
+    {
+        margin-top: 15px;
+        margin-left: 30px;
+        font-size: 23px;
+    }
+    .categor__Bx
+    {
+        margin-top: 7px;
+        margin-left: 30px;
+    }
+    .categor__Bx .categor__name
+    {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .categor__Bx .categor__p1
+    {
+        margin-left: 8px;
+        font-size: 17px;
+    }
+    .categor__Bx .categor__p2
+    {
+        margin-left: 16px;
+        font-size: 15px;
+    }
+    .none
+    {
+        display: none;
+    }
+}
+@media(max-width: 620px)
+{
+    .categor
+    {
+        margin-top: 50px;
+        height: calc(100vh - 50px);
+    }  
+}
